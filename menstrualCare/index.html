@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menstrual Care</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Menstrual Care</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="diet.html">Diet</a>
+        <a href="information.html">Info</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Menstrual Care</h2>
+      <button id="getStartedBtn">Get Started</button>
+    </section>
+
+    <section class="features">
+      <a href="diet.html" class="feature-link">
+        <div class="feature">
+          <img
+            src="https://img.icons8.com/ios/50/apple.png"
+            alt="Diet Plan Icon"
+          />
+          <h3>Diet Plan</h3>
+          <p>
+            Eat a balanced diet with plenty of fruits, vegetables, and whole
+            grains.
+          </p>
+        </div>
+      </a>
+      <div class="feature">
+        <img
+          src="https://img.icons8.com/ios/50/appointment-reminders.png"
+          alt="Reminder Icon"
+        />
+        <h3>Reminder</h3>
+        <p>Stay hydrated, exercise regularly, and rest well.</p>
+      </div>
+      <div class="feature">
+        <img
+          src="https://img.icons8.com/ios/50/water.png"
+          alt="Cycle Track Icon"
+        />
+        <h3>Cycle Track</h3>
+        <p>Track your cycle to understand your health.</p>
+      </div>
+    </section>
+
+    <section class="calendar">
+      <h2>Cycle Calendar</h2>
+      <div id="calendarContainer"></div>
+    </section>
+
+    <section class="reminder-section">
+      <h2>Set a Reminder</h2>
+      <form id="reminderForm">
+        <input
+          type="text"
+          id="reminderInput"
+          placeholder="Reminder message"
+          required
+        />
+        <input type="time" id="reminderTime" required />
+
+        <button type="submit">Save</button>
+      </form>
+      <ul id="reminderList"></ul>
+    </section>
+    <section class="tip-box">
+      <h3>🌸 Daily Health Tip</h3>
+      <p id="healthTip"></p>
+    </section>
+    <section class="cycle-section">
+      <h3>📅 Predict Your Next Period</h3>
+      <label for="cycleStart">Period Start Date:</label>
+      <input type="date" id="cycleStart" />
+      <p id="nextPeriod"></p>
+    </section>
+
+    <section class="mood-section">
+      <h3>😊 Mood Tracker</h3>
+      <label for="mood">How do you feel today?</label>
+      <select id="mood">
+        <option value="😊">Happy</option>
+        <option value="😐">Neutral</option>
+        <option value="😢">Sad</option>
+        <option value="😠">Irritated</option>
+        <option value="😴">Tired</option>
+      </select>
+      <button onclick="saveMood()">Save Mood</button>
+      <p id="savedMood"></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+  <audio
+    id="alarmSound"
+    src="https://www.soundjay.com/button/beep-07.wav"
+    preload="auto"
+  ></audio>
+</html>
