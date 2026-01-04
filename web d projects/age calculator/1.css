@@ -1,0 +1,101 @@
+body {
+    background-image: url('growth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+
+.container {
+    width: 520px;
+    height: auto;
+    margin: 100px auto;
+    background: rgba(220, 226, 200, 0.5); /* Light transparent background */
+    border-radius: 25px;
+    backdrop-filter: blur(10px); /* Blurs the background behind the container */
+    padding: 20px;
+}
+
+  
+  .base {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+  }
+  .block {
+    width: 120px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+  }
+  .base h4 {
+    font-size: 26px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+   
+    font-size: 34px;
+    color:rgba(2, 50, 2, 0.865);
+  }
+  .title {
+    font-size: 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: rgba(5, 86, 5, 0.865);
+  }
+  input[type="text"] {
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #07da07;
+    padding: 12px;
+    background-color: white;  
+      border-radius: 2px;
+    color: #06812b;
+    font-size: 17px;
+  }
+  input[type="text"]:focus {
+    background-color: #ffffff;
+    border: 2px solid rgb(89, 243, 140);
+    outline: none;
+  }
+  input[type="button"] {
+    width: 150px;
+    margin-left: 35%;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(5, 86, 5, 0.865);
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+  }
+  input[type="button"]:hover {
+    background-color: #26962d;
+  }
+  #age {
+    display: block;
+    margin: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    font-size: 23px;
+    font-family: verdana;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: rgb(2, 53, 18);
+  }
